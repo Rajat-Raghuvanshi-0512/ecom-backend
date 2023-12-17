@@ -8,7 +8,7 @@ from rest_framework.authentication import SessionAuthentication, TokenAuthentica
 from rest_framework.permissions import IsAuthenticated
 from .serializers import UserSerializer
 from rest_framework.authtoken.models import Token
-from .models import User
+from api.models import User
 from django.shortcuts import get_object_or_404
 
 

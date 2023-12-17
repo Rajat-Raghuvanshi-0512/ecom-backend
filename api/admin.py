@@ -1,7 +1,13 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
+from .models import User, Category, Product, Order, Address, Review, OrderItem
 
-from .models import User
+admin.site.register(Category)
+admin.site.register(Product)
+admin.site.register(Order)
+admin.site.register(Address)
+admin.site.register(Review)
+admin.site.register(OrderItem)
 
 
 @admin.register(User)

@@ -1,16 +1,16 @@
-POST http://localhost:8000/api/signup
+POST http://localhost:8000/api/auth/signup
 Content-Type: application/json
 
-{"email":"sample@sample.com","password":"password","first_name":"Rajat","last_name":"Raghuvanshi"}
+{"email":"sample1@sample.com","password":"password","first_name":"Rajat","last_name":"Raghuvanshi"}
 
 ###
 
-POST http://localhost:8000/api/signin
+POST http://localhost:8000/api/auth/signin
 Content-Type: application/json
 
 {"email":"rajat@gmail.com","password":"root"}
 ###
 
-GET http://localhost:8000/api/logout
+GET http://localhost:8000/api/auth/logout
 Content-Type: application/json
 # Authorization: Token a850b2e1c6fc02e26e0b497ad6d71f0b92302f7a
